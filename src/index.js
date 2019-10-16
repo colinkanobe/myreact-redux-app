@@ -4,12 +4,17 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import App from "./App";
+import { Provider } from "react-redux";
+import configureStore from "./redux/configureStore";
 //import * as serviceWorker from "./serviceWorker";
+const store = configureStore();
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>,
   document.getElementById("app")
 );
 

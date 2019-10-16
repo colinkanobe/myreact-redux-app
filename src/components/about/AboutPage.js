@@ -9,5 +9,4 @@ const AboutPage = () => (
     </p>
   </div>
 );
-
 export default AboutPage;
