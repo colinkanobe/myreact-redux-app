@@ -1,13 +1,6 @@
 {
   "courses": [
     {
-      "id": 1,
-      "title": "Securing React Apps with Auth0",
-      "slug": "react-auth0-authentication-security",
-      "authorId": 1,
-      "category": "JavaScript"
-    },
-    {
       "id": 2,
       "title": "React: The Big Picture",
       "slug": "react-big-picture",
@@ -69,38 +62,6 @@
       "slug": "web-components-shadow-dom",
       "authorId": 1,
       "category": "HTML5"
-    },
-    {
-      "id": 11,
-      "title": "ARG",
-      "authorId": 2,
-      "category": "fFG",
-      "createdAt": 1571770325640,
-      "slug": "arg"
-    },
-    {
-      "id": 12,
-      "title": "testing 101",
-      "authorId": 3,
-      "category": "efgwegtg",
-      "createdAt": 1571774140893,
-      "slug": "testing-101"
-    },
-    {
-      "id": 13,
-      "title": "testing 101",
-      "authorId": 2,
-      "category": "non fiction",
-      "createdAt": 1571776890674,
-      "slug": "testing-101"
-    },
-    {
-      "id": 14,
-      "title": "react isn't easy ",
-      "authorId": 1,
-      "category": "react learning",
-      "createdAt": 1571776934405,
-      "slug": "react-isn-t-easy"
     }
   ],
   "authors": [
