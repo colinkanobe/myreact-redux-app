@@ -24,7 +24,7 @@ exports[`sets submit button label 'Save' when saving is false 1`] = `
         name="title"
         onChange={[MockFunction]}
         type="text"
-        value="Securing React Apps with Auth0"
+        value="Securing React Apps with Auth0.."
       />
     </div>
   </div>
@@ -122,7 +122,7 @@ exports[`sets submit button label 'Saving...' when saving is true 1`] = `
         name="title"
         onChange={[MockFunction]}
         type="text"
-        value="Securing React Apps with Auth0"
+        value="Securing React Apps with Auth0.."
       />
     </div>
   </div>

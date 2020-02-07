@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "origin-react-website",
+    "staging-reactweb": "origin-react-website",
+    "firebase-react-redux-deploy": "origin-react-website"
+  }
+}

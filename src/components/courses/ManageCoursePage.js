@@ -8,7 +8,7 @@ import { newCourse } from "../../../tools/mockData";
 import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
 
-const ManageCoursePage = ({
+export const ManageCoursePage = ({
   courses,
   authors,
   loadAuthors,
@@ -90,10 +90,10 @@ const ManageCoursePage = ({
 };
 
 ManageCoursePage.propTypes = {
-  course: PropTypes.array.isRequired,
+  course: PropTypes.object.isRequired,
   authors: PropTypes.array.isRequired,
   courses: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired,
+  //actions: PropTypes.object.isRequired,
   loadAuthors: PropTypes.func.isRequired,
   loadCourses: PropTypes.func.isRequired,
   saveCourse: PropTypes.func.isRequired,
