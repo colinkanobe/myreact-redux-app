@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-myreact-redux-app-dev-233503-authRole",
+            "UnauthRoleArn": "arn:aws:iam::977375709764:role/amplify-myreact-redux-app-dev-233503-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::977375709764:role/amplify-myreact-redux-app-dev-233503-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-myreact-redux-app-dev-233503-deployment",
+            "UnauthRoleName": "amplify-myreact-redux-app-dev-233503-unauthRole",
+            "StackName": "amplify-myreact-redux-app-dev-233503",
+            "StackId": "arn:aws:cloudformation:us-east-2:977375709764:stack/amplify-myreact-redux-app-dev-233503/8ffe6bc0-4af5-11ea-af4a-0a9fc5c4303c",
+            "AmplifyAppId": "d3emqzh0krw224"
+        }
+    }
+}
