@@ -28,7 +28,7 @@ module.exports = {
       // This global makes sure React is built in prod mode.
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
       "process.env.API_URL": JSON.stringify(
-        "https://d3emqzh0krw224.amplifyapp.com" //"https://origin-react-website.firebaseapp.com"
+        "https://master.d3emqzh0krw224.amplifyapp.com" //"https://origin-react-website.firebaseapp.com"
       )
     }),
     new HtmlWebpackPlugin({
