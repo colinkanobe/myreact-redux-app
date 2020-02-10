@@ -29,7 +29,9 @@ module.exports = {
       // "https://master.d3emqzh0krw224.amplifyapp.com"
       //  https://origin-react-website.firebaseapp.com
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
-      "process.env.API_URL": JSON.stringify("https://localhost:3001")
+      "process.env.API_URL": JSON.stringify(
+        "https://origin-react-website.firebaseapp.com"
+      )
     }),
     new HtmlWebpackPlugin({
       template: "src/index.html",
