@@ -7,10 +7,10 @@ const baseUrl = process.env.API_URL + "/courses/";
 //const cors = require("cors")({ origin: true });
 //const baseUrl = "http://localhost:3001/courses/"; //"https://origin-react-website.firebaseapp.com/courses";
 //"http://localhost:3001/courses/";
-
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 export function getCourses() {
   debugger;
-  return fetch(baseUrl, {
+  return fetch(proxyurl + baseUrl, {
     mode: "cors"
   })
     .then(handleResponse)
