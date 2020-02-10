@@ -25,11 +25,11 @@ module.exports = {
     }),
 
     new webpack.DefinePlugin({
-      // This global makes sure React is built in prod mode. "https://master.d3emqzh0krw224.amplifyapp.com"
+      // This global makes sure React is built in prod mode.
+      // "https://master.d3emqzh0krw224.amplifyapp.com"
+      //  https://origin-react-website.firebaseapp.com
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
-      "process.env.API_URL": JSON.stringify(
-        "https://origin-react-website.firebaseapp.com"
-      )
+      "process.env.API_URL": JSON.stringify("http://localhost:3001")
     }),
     new HtmlWebpackPlugin({
       template: "src/index.html",
