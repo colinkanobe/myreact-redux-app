@@ -1,3 +1,9 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/38d5986b-dc7c-4f27-acd4-3b3aaf91fec6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/myreact-redux-app",
+    "appService.deploySubpath": ""
 }

@@ -15,6 +15,15 @@ const jsonServer = require("json-server");
 const server = jsonServer.create();
 const path = require("path");
 const router = jsonServer.router(path.join(__dirname, "db.json"));
+const https = require("https");
+const http = require("http");
+// var http = require('http')
+//   , https = require('https')
+//   , express = require('express')
+//   , app = express();
+
+// http.createServer(app).listen(80);
+// https.createServer({http,https }, app).listen(443);
 
 // Can pass a limited number of options to this to override (some) defaults. See https://github.com/typicode/json-server#api
 const middlewares = jsonServer.defaults({
@@ -58,8 +67,16 @@ server.post("/courses/", function(req, res, next) {
 server.use(router);
 
 // Start server
-const port = 3001;
-server.listen(port, () => {
+const port = 443; // 3001;
+/* server.listen(port, () => {
+  console.log(`JSON Server is running on port ${port}`);
+}); */
+const options = {
+  IncomingMessage: http.IncomingMessage,
+  ServerResponse: http.ServerResponse
+};
+http.createServer(server).listen(3001);
+https.createServer({ options }, server).listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });
 

@@ -30,7 +30,7 @@ module.exports = {
       //  https://origin-react-website.firebaseapp.com
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
       "process.env.API_URL": JSON.stringify(
-        "https://origin-react-website.firebaseapp.com"
+        "https://cpwebapi.azurewebsites.net"
       )
     }),
     new HtmlWebpackPlugin({
