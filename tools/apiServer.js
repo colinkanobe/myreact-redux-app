@@ -1,35 +1,11 @@
-/*
-This uses json-server, but with the module approach: https://github.com/typicode/json-server#module
-Downside: You can't pass the json-server command line options.
-Instead, can override some defaults by passing a config object to jsonServer.defaults();
-You have to check the source code to set some items.
-Examples:
-Validation/Customization: https://github.com/typicode/json-server/issues/266
-Delay: https://github.com/typicode/json-server/issues/534
-ID: https://github.com/typicode/json-server/issues/613#issuecomment-325393041
-Relevant source code: https://github.com/typicode/json-server/blob/master/src/cli/run.js
-*/
-
 /* eslint-disable no-console */
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const path = require("path");
 const router = jsonServer.router(path.join(__dirname, "db.json"));
-const https = require("https");
-const http = require("http");
-// var http = require('http')
-//   , https = require('https')
-//   , express = require('express')
-//   , app = express();
-
-// http.createServer(app).listen(80);
-// https.createServer({http,https }, app).listen(443);
 
 // Can pass a limited number of options to this to override (some) defaults. See https://github.com/typicode/json-server#api
-const middlewares = jsonServer.defaults({
-  // Display json-server's built in homepage when json-server starts.
-  static: "node_modules/json-server/dist"
-});
+const middlewares = jsonServer.defaults();
 
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares);
@@ -68,15 +44,7 @@ server.use(router);
 
 // Start server
 const port = 3001;
-/* server.listen(port, () => {
-  console.log(`JSON Server is running on port ${port}`);
-}); */
-const options = {
-  IncomingMessage: http.IncomingMessage,
-  ServerResponse: http.ServerResponse
-};
-// http.createServer(server).listen(3001);
-https.createServer({ options }, server).listen(port, () => {
+server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });
 
