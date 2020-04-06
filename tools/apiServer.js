@@ -67,7 +67,7 @@ server.post("/courses/", function(req, res, next) {
 server.use(router);
 
 // Start server
-const port =  3001;
+const port = 3001;
 /* server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 }); */
@@ -75,7 +75,7 @@ const options = {
   IncomingMessage: http.IncomingMessage,
   ServerResponse: http.ServerResponse
 };
-http.createServer(server).listen(3001);
+// http.createServer(server).listen(3001);
 https.createServer({ options }, server).listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });
