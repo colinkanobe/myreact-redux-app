@@ -60,7 +60,8 @@
     "clean:build": "rimraf ./build && mkdir build",
     "prebuild": "run-p clean:build test:ci",
     "build": "webpack --config webpack.config.prod.js",
-    "serve:build": "https-server ./build"
+    "postbuild": "run-p start:api serve:build",
+    "serve:build": "http-server ./build"
   },
   "jest": {
     "setupFiles": [
