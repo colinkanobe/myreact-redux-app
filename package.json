@@ -61,7 +61,7 @@
     "prebuild": "run-p clean:build test:ci",
     "build": "webpack --config webpack.config.prod.js",
     "postbuild": "run-p start:api serve:build",
-    "serve:build": "http-server ./build"
+    "serve:build": "https-server ./build"
   },
   "jest": {
     "setupFiles": [
